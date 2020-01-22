@@ -1,0 +1,29 @@
+* E:\_kicad_brd\xxxx\xxxx.kicad_pcb exported by pcb-rnd 2.1.4 (non-svn) on 2020-01-13 03:37:43 UTC
+* Board: (null)
+{VERSION=2.0}
+{DATA_MODE=DETAILED}
+{UNITS=METRIC LENGTH}
+{BOARD
+* implicit outline derived from board width and height
+  (PERIMETER_SEGMENT X1=0.00000 Y1=21.00000 X2=29.70000 Y2=21.00000)
+  (PERIMETER_SEGMENT X1=0.00000 Y1=21.00000 X2=0.00000 Y2=0.00000)
+  (PERIMETER_SEGMENT X1=29.70000 Y1=21.00000 X2=29.70000 Y2=0.00000)
+  (PERIMETER_SEGMENT X1=0.00000 Y1=0.00000 X2=29.70000 Y2=0.00000)
+}
+{STACKUP
+  (SIGNAL T=0.003500 L=top_copper)
+  (DIELECTRIC T=0.160000 L="dielectric layer 4")
+  (DIELECTRIC T=0.160000 L="dielectric layer 12")
+  (SIGNAL T=0.003500 L=bottom_copper)
+}
+{DEVICES
+}
+{NET=netmap_anon_0
+  {POLYGON L=top_copper T=POUR W=0.0 ID=1 X=10.02400 Y=14.28300
+    (LINE X=10.38400 Y=14.56300)
+    (LINE X=10.75400 Y=14.46300)
+    (LINE X=10.80400 Y=14.06300)
+    (LINE X=10.02400 Y=14.28300)
+  }
+}
+{END}
