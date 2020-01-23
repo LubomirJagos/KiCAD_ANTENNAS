@@ -1,4 +1,6 @@
 addpath('D:\openEMS\pcb2csx\matlab');
+addpath('C:\Users\H364387\Downloads\openEMS\pcb2csx\matlab');
+
 %%% Board mesh, part 1
 unit = 1.0e-3;
 FDTD = InitFDTD();
@@ -13,5 +15,15 @@ CSX = InitCSX();
 run "GPS Patch Antenna 1 Simulation.m"
 
 Sim_Path = '.';
+%Sim_CSX = '_manual_corrections_csxcad.xml';
 Sim_CSX = 'csxcad.xml';
-WriteOpenEMS( [Sim_Path '/' Sim_CSX], FDTD, CSX );
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%% SIMULATION
+    
+%WriteOpenEMS( [Sim_Path '/' Sim_CSX], FDTD, CSX );
+
+%% show the structure
+CSXGeomPlot( [Sim_Path '/' Sim_CSX] );
+
+%% run openEMS
+RunOpenEMS( Sim_Path, Sim_CSX, '');
